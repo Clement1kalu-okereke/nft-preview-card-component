@@ -1,0 +1,128 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+
+  --Cyan: hsl(178, 100%, 50%);
+
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit";
+  gap: 10px;
+}
+
+main {
+  background-color: var(--Very-dark-blue-card-BG);
+  height: 50vh;
+  display: table;
+  border-radius: 14px;
+}
+.img-equilibrium {
+  display: block;
+  backface-visibility: hidden;
+  opacity: 1;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.img-container {
+  margin-top: 27px;
+  text-align: center;
+  padding-inline: 26px;
+}
+
+.img {
+  position: relative;
+  height: 300px;
+}
+.cyan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.img:hover {
+  background-color: var(--Cyan);
+  border-radius: 10px;
+}
+.img:hover .img-equilibrium {
+  opacity: 0.4;
+}
+.img:hover .cyan {
+  opacity: 0.5;
+}
+
+.text-container {
+  padding-inline: 28px;
+}
+
+h2 {
+  color: var(--White);
+}
+h2:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+p {
+  width: 30ch;
+  font-size: 18px;
+  color: var(--Soft-blue);
+}
+.text_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.eth_bal {
+  color: var(--Cyan);
+}
+.time_left {
+  color: var(--Soft-blue);
+}
+
+.profile {
+  padding-block: 10px;
+  display: flex;
+  align-items: center;
+  color: var(--Soft-blue);
+  font-size: 1.1rem;
+  padding-top: 10px;
+  border-top: 1px solid var(--Very-dark-blue-line);
+  margin-top: 10px;
+}
+
+.profile img {
+  height: 50px;
+  margin-right: 10px;
+  border: 2px solid var(--White);
+  border-radius: 100%;
+}
+.profile span {
+  color: var(--White);
+  padding-left: 10px;
+}
+.profile span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  color: var(--White);
+  font-size: 1.1rem;
+}
