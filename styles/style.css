@@ -12,6 +12,7 @@
   --White: hsl(0, 0%, 100%);
 }
 body {
+  font-family: "Outfit", sans-serif;
   background-color: var(--Very-dark-blue-main-BG);
   display: flex;
   min-height: 100vh;
@@ -35,6 +36,7 @@ main {
   height: 300px;
   border-radius: 10px;
   transition: 0.5s ease;
+  width: 100%;
 }
 .img-container {
   margin-top: 27px;
